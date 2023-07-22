@@ -1,0 +1,92 @@
+.nav
+    background: #423f3e
+    height: 4.1em
+    position: fixed
+    z-index: 77777
+    top: 0
+    width: 100%
+
+.botones
+    width: 640px
+    font-size: 16px
+    padding: 7px
+    padding-top: 22px
+
+.media
+    display: flex
+    justify-content: space-between
+    transition: all .15s ease-out
+
+.page-name
+    padding: 7px
+    padding-top: 15px
+    font-size: 28px
+    margin-left: 1.5em
+    
+    text-align: center
+
+    a
+        
+        cursor: pointer
+        font-family: 'SoDo Sans Bold'
+        text-decoration: none
+        text-transform: uppercase
+        position: absolute
+        
+    .bordaso
+        color: #fff
+        text-shadow: -1px -1px 0 6e6967, 1px -1px 0 6e6967, 1px 1px 0 6e6967, -1px 1px 0 6e6967
+    .ola
+        color: #000000
+        animation: wave 3s ease-in-out infinite
+
+@keyframes wave
+    0%,100%
+        clip-path: polygon(0% 47%,10% 48%,33% 54%,54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,0% 100%) 
+
+    50%
+        clip-path: polygon(0% 60%,15% 65%,34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%)   
+
+
+.casa
+    transform: translateY(2px)
+
+@media only screen and (max-width: 950px)
+    .hola .media
+        flex-direction: column
+        background: #423f3e
+        position: relative
+
+    .hola .page-name
+        position: relative
+        left: -3.4em
+        margin: 0 auto
+        margin-bottom: 45px
+        z-index: 505
+        top: 0
+    
+
+    
+
+
+    .botones
+        display: none
+
+    .hola .botones
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        width: auto
+        .button-nav
+            margin: 25px 35px
+
+@media only screen and (max-width: 1165px)
+    .page-name
+        font-size: 18px
+        margin-top: 5px
+
+    .botones
+        font-size: 13px
+        text-align: right

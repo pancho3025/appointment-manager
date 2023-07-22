@@ -1,0 +1,232 @@
+#citas
+    height: 890px
+    background: #1c1c1c
+    padding-top: 50px
+
+.citas-title
+    font-family: 'SoDo Sans SemiBold'
+    text-transform: uppercase
+    text-align: center
+    height: 50px
+    padding-top: 37px
+    font-size: 45px
+    letter-spacing: 7px
+    color: #fff
+
+@keyframes wave
+    0%,100%
+        clip-path: polygon(0% 47%,10% 48%,33% 54%,54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,0% 100%)
+
+    50%
+        clip-path: polygon(0% 60%,15% 65%,34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%)
+
+.citas-form
+    display: flex
+    margin: 0 auto
+
+    flex-direction: column
+    width: 380px
+    height: 465px
+    box-shadow: 0 0 7px 5px #0c0b0b54
+    padding: 27px 35px
+    
+    font-family: 'SoDo Sans SemiBold'
+    color: #fff
+
+.inputs
+    margin: 10px 0
+    height: 27px
+    border: none
+    outline: none
+    padding: 7px 17px
+    background: #979089
+    color: #fff
+    font-family: 'SoDo Sans Light'
+    border-radius: 3px
+    font-size: 15px
+    transition: all .2s ease-out
+    resize: none
+    font-weight: 600
+    letter-spacing: 1px
+    &:hover,&:active,&:focus
+        box-shadow: 0 0 6px 1px #686261
+
+    &::placeholder
+        color: #ffffff98
+
+.inputs:nth-child(8)
+    height: 90px
+
+.enviar-cita
+    cursor: pointer
+    border: none
+    font-family: 'SoDo Sans SemiBold'
+    text-transform: uppercase
+    background: #454240
+    color: #fff
+    width: 145px
+    height: 55px
+    margin: 0 auto
+    transform: translateY(10px)
+    font-size: 17px
+    transition: all .15s ease-in-out
+    border-radius: 51px
+
+    &:hover
+        color: #454240
+        background: #fff
+
+label
+    font-size: 20px
+    letter-spacing: 1px
+
+.citas-container
+    font-family: 'SoDo Sans Light'
+    background: #7e7e7e
+    position: absolute
+    right: 0
+    top: 213px
+    width: 340px
+    overflow-y: auto
+    border-radius: 1px
+    max-height: 625px
+    color: #fff
+    box-shadow: 0px 0 7px 2px #0c0b0b54
+    transition: background .35s linear
+    
+    
+
+    .mis-citas
+        text-align: center
+        font-size: 32px
+        text-shadow: 3px 3px 5px #000000a4
+        font-family: 'SoDo Sans Bold'
+        padding: 2px
+        margin: 12px
+
+    .cita
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 7px
+        border-top: 2px solid #cccccc54
+        
+        overflow: hidden
+
+        .cita-nombre,.cita-fecha,.cita-hora,.cita-sintomas
+            margin: 7px
+            font-size: 17px
+            padding: 0
+            font-family: 'SoDo Sans Light'
+
+            & b 
+                font-size: 18px
+                text-shadow: 0 0 3px #00000067
+                font-family: 'SoDo Sans Bold'
+            
+            
+        .eliminar-tarea
+            background: #d15252
+            font-family: 'SoDo Sans Light'
+            font-weight: 800
+            color: #fff
+            border-radius: 25px
+            width: 135px
+            height: 40px
+            font-size: 13px
+            cursor: pointer
+            margin-top: 15px
+            margin-bottom: 10px
+            border: none
+            outline: 1px solid #fff
+            outline-offset: -6px
+            transition: 120ms
+
+            &:hover
+                background: #ad5454
+                outline-offset: 6px
+                letter-spacing: 2px
+
+            &:active
+                
+                background:#d46161
+
+
+                    
+.boton-citas
+    border: none
+    cursor: pointer
+    width: 45px
+    height: 45px
+    position: absolute
+    box-shadow: -10px 0 8px 1px #0c0b0b54
+    right: 340px
+    
+    z-index: 555
+    top: 213px
+    background: #7e7e7e
+    transition: 150ms
+    border-bottom-left-radius: 25px
+    border-top-left-radius: 25px
+    transition: background .35s linear
+    
+    
+   
+    .cita-container-icon
+        font-size: 28px
+
+    
+.warning
+    background: #ebebeb 
+    font-family: 'SoDo Sans SemiBold' 
+    color: #790000cc
+    text-align: center
+    box-shadow: 0 0 3px 7px rgba(0, 0, 0, .25)
+    text-transform: uppercase
+    
+    letter-spacing: 2px
+    font-size: 17px
+    padding: 7px 27px
+    width: 353px
+    margin: 0 auto
+    margin-bottom: 20px
+    height: 30px
+    line-height: 30px
+    cursor: not-allowed
+
+.no-citas
+    text-align: center
+    font-size: 18px
+    margin-top: 25px
+    font-family: 'SoDo Sans SemiBold' 
+
+
+.cita-container-icon
+    
+    color: #fff
+    width: 38px
+    height: 38px
+
+.seccion-citas-container
+    position: absolute
+    right: 0
+    top: 0
+    
+
+.seccion-citas-container.cerrada
+    position: absolute
+    right: -340px
+    top: 0px
+
+@keyframes mover
+    from
+       right: -340px 
+    to
+        right: 0px
+
+@keyframes izq-to-der
+    from
+        right: 0px
+    to
+        right: -340px
+        

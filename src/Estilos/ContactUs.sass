@@ -1,0 +1,178 @@
+#contact
+    background: #1c1c1c
+    height: 680px
+    display: flex
+    align-items: center
+
+.contact-container
+    display: flex
+    height: 500px
+    width: 650px
+    margin: 0px auto
+
+.form-container
+    width: 70%
+    background: #1c1c1c
+    padding: 27px
+    border: 2px solid #5e5d5d
+
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+
+.form-title
+    font-family: 'SoDo Sans Bold'
+    font-size: 30px
+    color: #fff
+    margin: 15px 0
+    width: 100%
+    text-align: center
+
+.name-email
+    display: flex
+
+#contactar
+    display: flex
+    flex-direction: column
+
+    input
+        margin: 12px 7px
+        width: 50%
+        height: 40px
+        padding: 4px 8px
+        border: none
+        outline: none
+        border-radius: 3px
+        font-family: 'SoDo Sans Light'
+        color: #1c1c1c
+
+    textarea
+        height: 90px
+        resize: none
+        border: none
+        outline: none
+        margin: 7px
+        color: #1c1c1c
+        padding: 8px 8px
+        border-radius: 1px
+        font-family: 'SoDo Sans Light'
+
+    .enviar
+        cursor: pointer
+        margin: 0 auto
+        margin-top: 25px
+        height: 50px
+        font-size: 16px
+        text-transform: uppercase
+        font-weight: 700
+        letter-spacing: 3px
+        box-shadow: 0 0 10px 7px rgba(0, 0, 0, .3)
+        background: #fff
+
+        transition: all .2s ease
+
+        &:hover
+            transform: scale(1.01)
+            background: #d6d4d4
+            box-shadow: 0 0 10px 7px rgba(0, 0, 0, .65)
+
+.side-contact
+    background: #5e5d5d
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+
+.side-title
+    font-family: 'SoDo Sans SemiBold'
+    font-size: 18px
+    letter-spacing: 1px
+    color: #f1f1f1
+    margin: 0
+    margin-top: 25px
+    width: 100%
+    margin-bottom: 0
+    text-align: center
+
+.more-contact
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    height: 80%
+
+.contact-item
+    margin: 15px 15px
+    padding-bottom: 5px
+
+.item-title
+    font-family: 'SoDo Sans Light'
+    letter-spacing: 2px
+    color: #fff
+    text-align: center
+    margin-bottom: 15px
+    position: relative
+
+.item-link:visited, .item-link:link, .item-link
+    text-decoration: none
+    color: #ffffffc9
+    margin-right: 0
+
+    font-family: 'SoDo Sans Light'
+
+.icons
+    color: #ebebeb
+    font-size: 22px
+    margin: 0 7px
+    margin-bottom: -5px
+    position: relative
+    z-index: 777
+    left: -10px
+
+.icon-circle1
+    width: 40px
+    height: 40px
+    position: absolute
+    top: -9px
+    left: -4px
+    z-index: 25
+    border-radius: 50%
+    background: #474343
+
+.icon-circle2
+    @extend .icon-circle1
+    left: 28px
+
+.icon-circle3
+    @extend .icon-circle1
+    left: 51px
+
+.warning-form
+    background: #ebebeb
+    font-family: 'SoDo Sans SemiBold'
+    color: #790000cc
+    text-align: center
+    box-shadow: 0 0 3px 7px rgba(0, 0, 0, .25)
+    text-transform: uppercase
+
+    letter-spacing: 2px
+    font-size: 12px
+    padding: 7px 27px
+    width: 275px
+    margin: 0 auto
+    margin-bottom: 5px
+    height: 20px
+    line-height: 20px
+    cursor: not-allowed
+
+@media screen and ( max-width: 600px )
+    .icon-circle3
+       
+        left: 45px
+
+@media screen and (max-width: 570px) 
+    .icon-circle3
+        
+        left: 30px
+
+@media screen and (max-width: 470px) 
+    .icon-circle3
+        
+        left: 20px
